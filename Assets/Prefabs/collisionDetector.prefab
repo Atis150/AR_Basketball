@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 746513934574993705}
   - component: {fileID: 1104217794911266266}
   - component: {fileID: 4066179224716500230}
-  - component: {fileID: 4465209743360086806}
+  - component: {fileID: -9050967296682927302}
   m_Layer: 0
   m_Name: collisionDetector
-  m_TagString: Untagged
+  m_TagString: collisionDetection
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4465209743360086806
+--- !u!114 &-9050967296682927302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,8 +107,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6037765378156429978}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ff1b46622776a7428795660e8300a82, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cf443f0ed19add469debc0482487189, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Score: 0
-  ScoreText: {fileID: 0}
+  score: 0
+  timeLimit: 30
+  scoreText: {fileID: 0}
+  timeText: {fileID: 0}
+  startAgainButton: {fileID: 0}
+  scoreUpSound: {fileID: 8300000, guid: 83065d34d1a7f6b44bcc0ec72f0d4679, type: 3}
+  startAgain: {fileID: 8300000, guid: ca5fac4c307cc06448dabbe6bf67e068, type: 3}
+  gameStart: {fileID: 8300000, guid: 69007d240cabe6c419f63283fad622ea, type: 3}
