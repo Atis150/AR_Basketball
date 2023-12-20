@@ -25,6 +25,9 @@ public class ThrowBall : MonoBehaviour
 	private bool directionChosen = false;
 	private bool throwStarted = false;
 
+    public AudioClip ballThrowSound;
+    private AudioSource audioSource;
+
 	[SerializeField]
 	GameObject ARCam;
 
@@ -39,6 +42,15 @@ public class ThrowBall : MonoBehaviour
 		ARCam = m_SessionOrigin.transform.Find("AR Camera").gameObject;
 		transform.parent = ARCam.transform;
 		ResetBall();
+
+        audioSource = gameObject.GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            // If there's no AudioSource component, add one
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+        audioSource.playOnAwake = false;
+        audioSource.clip = ballThrowSound;
 	}
 
 	private void Update(){
@@ -56,6 +68,7 @@ public class ThrowBall : MonoBehaviour
 			duration = endTime - startTime;
 			direction = Input.mousePosition - startPosition;
 			directionChosen = true;
+            audioSource.Play();
 		}
 
 		// Direction was chosen, which will release/throw the ball
@@ -78,8 +91,8 @@ public class ThrowBall : MonoBehaviour
 			directionChosen = false;
 		}
 
-		// 5 seconds after throwing the ball, we reset it's position
-		if(Time.time - endTime >= 5 && Time.time - endTime <= 6)
+		// 4 seconds after throwing the ball, we reset it's position
+		if(Time.time - endTime >= 4 && Time.time - endTime <= 5)
 			ResetBall();
 
 	}

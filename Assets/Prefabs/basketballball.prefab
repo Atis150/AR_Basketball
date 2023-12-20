@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 716673627313198045}
   - component: {fileID: 3993449493111099390}
   - component: {fileID: 2027815391473615685}
+  - component: {fileID: -5007328527053153414}
   m_Layer: 0
   m_Name: basketballball
   m_TagString: Untagged
@@ -27,14 +28,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365398475302990344}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.02232191, y: -0.7573203, z: -0.5772576, w: 0.30453482}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -59.4, y: -106.91, z: -49.21}
 --- !u!33 &3321076606964082455
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -113,9 +114,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa52f58786f0ab44ca6f34ed9b694ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ThrowForce: 100
+  m_ThrowForce: 30
   m_ThrowDirectionX: 0.17
   m_ThrowDirectionY: 0.67
   m_BallCameraOffset: {x: 0, y: -0.5, z: 1.2}
+  ballThrowSound: {fileID: 8300000, guid: 78e16d9fcd3461f49a3bbd3d9d37280b, type: 3}
   ARCam: {fileID: 0}
   m_SessionOrigin: {fileID: 0}
+--- !u!135 &-5007328527053153414
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365398475302990344}
+  m_Material: {fileID: 13400000, guid: 97c4141361f55424daec92fa7d4226b5, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12018051
+  m_Center: {x: 0, y: 0, z: 0}
