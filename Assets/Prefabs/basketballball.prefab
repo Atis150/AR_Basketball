@@ -116,6 +116,6 @@ MonoBehaviour:
   m_ThrowForce: 100
   m_ThrowDirectionX: 0.17
   m_ThrowDirectionY: 0.67
-  m_BallCameraOffset: {x: 0, y: 0.2, z: 1.2}
+  m_BallCameraOffset: {x: 0, y: -0.5, z: 1.2}
   ARCam: {fileID: 0}
   m_SessionOrigin: {fileID: 0}
