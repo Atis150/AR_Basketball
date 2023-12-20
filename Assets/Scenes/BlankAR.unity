@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &13519112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &554371382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7169812, g: 0.3895821, b: 0.10416517, a: 1}
+  m_Color: {r: 0.7924528, g: 0.43406814, b: 0.11512991, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1278,7 +1278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354141925}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1527,6 +1527,7 @@ GameObject:
   - component: {fileID: 1659859600}
   - component: {fileID: 1659859601}
   - component: {fileID: 1659859602}
+  - component: {fileID: 1659859603}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -1599,6 +1600,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659859597}
   m_Enabled: 1
+--- !u!114 &1659859603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659859597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e7ce72d59e83d4bad80a5c8401afb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HoopPrefab: {fileID: 8222067952117201525, guid: d025b108d80dae244b9289f09d925fed,
+    type: 3}
+  m_BallPrefab: {fileID: 1365398475302990344, guid: 8ed41b796c140134ba5fce74075c22f8,
+    type: 3}
 --- !u!114 &1732568291 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8772014013501678472, guid: 1aae1d258425edb44bca104ac48d8d57,
@@ -1628,7 +1645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1900705794
 MonoBehaviour:
   m_ObjectHideFlags: 0
