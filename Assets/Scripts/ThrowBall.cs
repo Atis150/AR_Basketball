@@ -14,7 +14,7 @@ public class ThrowBall : MonoBehaviour
 	public float m_ThrowDirectionY = 0.67f;
 
 	// Offset of the ball's position in relation to camera's position
-	public Vector3 m_BallCameraOffset = new Vector3(0f, -1.4f, 53f);
+	public Vector3 m_BallCameraOffset = new Vector3(0f, -1.4f, 3f);
 
 	// The following variables contain the state of the current throw
 	private Vector3 startPosition;

@@ -16,6 +16,7 @@ public class PlaceHoop : MonoBehaviour
     GameObject m_BallPrefab;
 
     ARRaycastManager m_RaycastManager;
+    ARPlaneManager m_PlaneManager;
 
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
 
@@ -24,6 +25,7 @@ public class PlaceHoop : MonoBehaviour
     void Awake()
     {
         m_RaycastManager = GetComponent<ARRaycastManager>();
+        m_PlaneManager = FindObjectOfType<ARPlaneManager>(); // Get the ARPlaneManager
     }
 
     void Update()
@@ -54,6 +56,11 @@ public class PlaceHoop : MonoBehaviour
                     if (planeManager != null)
                     {
                         planeManager.enabled = false;
+                        
+                        foreach (var plane in m_PlaneManager.trackables)
+                        {
+                            plane.gameObject.SetActive(false);
+                        }
                     }
 
                     // Set the flag to true to avoid further placements
