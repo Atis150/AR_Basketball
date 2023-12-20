@@ -9,6 +9,7 @@ TagManager:
   - score
   - timeLeft
   - StartAgain
+  - session_ended
   layers:
   - Default
   - TransparentFX

@@ -21,11 +21,7 @@ public class Ball_hit_hoop : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Check if the collision is with the basketball
-        if (collision.gameObject.CompareTag("basketballball"))
-        {
             // Play the hit backboard sound
             audioSource.Play();
-        }
     }
 }

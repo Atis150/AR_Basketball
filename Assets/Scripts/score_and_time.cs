@@ -54,8 +54,8 @@ public class score_and_time : MonoBehaviour
 
         if (currentTime <= 0f)
         {
-            // Game over logic (you can add your own game over behavior here)
-            Debug.Log("Game Over!");
+            score = 0;
+            PlayStartAgain();
 
             // Activate the "StartAgain" button
             startAgainButton.interactable = true;

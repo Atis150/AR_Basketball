@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 810655621338850745}
   - component: {fileID: 8960827091528404548}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -568,12 +568,17 @@ PrefabInstance:
     - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 2.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.134
       objectReference: {fileID: 0}
     - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 20
+      value: 2.68
       objectReference: {fileID: 0}
     - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
         type: 3}
@@ -583,7 +588,7 @@ PrefabInstance:
     - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 117.2
+      value: 127.3
       objectReference: {fileID: 0}
     - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
         type: 3}
@@ -624,6 +629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2426988058109418522, guid: f77016f60edf51a4990b9e830bec4fba,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6037765378156429978, guid: f77016f60edf51a4990b9e830bec4fba,
         type: 3}
